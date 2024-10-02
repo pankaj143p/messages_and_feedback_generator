@@ -12,8 +12,5 @@ export const signUpSchema = z.object({
     email : emailValidation,
     password : z.string().min(6,"password must be greather than 6 or lessthan 20 characters")
     .max(20,"password must be greather than 6 or lessthan 20 characters")
-    .regex(/^a-zA-Z%@#./, "password must be not contain special sybols")
-    
-
-   
+    .regex(/^a-zA-Z%@#./, "password must be not contain special sybols") 
 })

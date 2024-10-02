@@ -101,7 +101,7 @@ export async function POST(request: Request) {
         return NextResponse.json(
             {
                 success: false,
-                message: error.message || "An error occurred while creating the user",
+                message: (error as Error).message || "An error occurred while creating the user",
             },
             {
                 status: 500,

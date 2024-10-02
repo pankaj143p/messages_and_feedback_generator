@@ -15,7 +15,7 @@ export async function sendVerificationEmail(
         to: email,
         subject: 'Verify your email address',
         react: VerificationEmail({
-           username,otp:  verifycode 
+           username,otp: verifycode 
         }),
       });
         return {
